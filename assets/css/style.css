@@ -152,12 +152,12 @@ body {
     margin: 0;
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     .container-flex {
         display: flex;
         flex-wrap: wrap;
         height: 100vh;
-        gap: 0.5rem;
+        gap: 2%;
     }
 
     .cart {
