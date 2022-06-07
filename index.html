@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container-flex">
+            <div class="card">
+                <img src="assets/img/foto-removebg-preview.png" alt=""> 
+                <h5>Notebook Asus RTX3090</h5>
+                <input type="text" placeholder="cantidad" id="cantidad">
+                <div class="colores">
+                    <div id="blanco" onclick="blanco();"></div>
+                    <div id="rojo" onclick="rojo();"></div>
+                    <div id="negro" onclick="negro();"></div>
+                    <div id="gris" onclick="gris();"></div>
+                </div>
+                <p class="precio">Precio: $<span id="precio"></span> USD</p>
+                <div class="calcular">
+                    <input class="boton" type="button" value="Calcular Total" onclick="calcular();">
+                </div>
+            </div>
+            <div class="cart">
+                <div class="color-carro">
+                    <p>Color:</p>
+                    <div id="colorSeleccionado"></div> 
+                </div>
+                <div>
+                    <p class="cantidad">cantidad: <span id="cantidad-total">0</span></p>
+                </div>
+                <div>
+                    <p>Total: $<span id="total">0</span> USD</p>
+                </div>
+            </div>
+        </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
